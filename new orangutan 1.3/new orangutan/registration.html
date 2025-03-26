@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Introduction about the project" />
+  <meta name="keywords" content="HTML5 tags" />
+  <meta name="author" content="Daryl LIM, Wei Chien CHIN"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <link rel="icon" type="image/x-icon" href="styles/images/TerraGuide-Favicon.png">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="page.js"></script>
+</head>
+
+<body>
+
+  <!-- Replace this with your HTML version of header if needed -->
+  <header class="header">
+    <nav id="navbar" class="navbar-template">
+      <div class="nav-logo">
+        <a href="index.html">
+            <img src="styles/images/TerraGuide_Logo.png" alt="TerraGuide Logo">
+        </a>
+      </div>
+
+      <ul id="nav-links" class="nav-links">
+        <li class="navbar-item">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="navbar-item">
+          <a href="aboutus.html">About Us</a>
+        </li>
+
+        <li class="navbar-dropdown">
+          <div class="navbar-dropbtn">
+            <a href="mycourses.html" class="navbar-dropbtn-text-btn">My Courses</a>
+            <i class="fa fa-caret-down"></i>
+          </div>
+          <div class="navbar-dropdown-content">
+            <a href="tools.html">Course 1</a>
+            <a href="care.html">Course 2</a>
+          </div>
+        </li>
+
+        <li class="navbar-dropdown">
+          <div class="navbar-dropbtn">
+            <a href="dextai.html" class="navbar-dropbtn-text-btn">Dext AI</a>
+            <i class="fa fa-caret-down"></i>
+          </div>
+          <div class="navbar-dropdown-content">
+            <a href="alwin-profile.html">Alwin's Profile</a>
+            <a href="chin-profile.html">Chin's Profile</a>
+            <a href="razael-profile.html">Razael's Profile</a>
+            <a href="riad-profile.html">Riad's Profile</a>
+          </div>
+        </li>
+
+        <li class="navbar-item">
+          <a href="blogs.html">Blogs</a>
+        </li>
+        <li class="navbar-item">
+          <a href="parkguide.html">Park Guide</a>
+        </li>
+
+      <div class="nav-btn">
+        <a href="registration.html" class="action_btn1" id="signup">Sign Up</a>
+        <span class="divider"></span>
+        <a href="login.html" class="action_btn2" id="login">Log In</a>
+      </div>
+
+      <!-- Mobile toggle menus -->
+      <div class="navbar-toggle-dropdown">
+        <div class="nav-toggle-btn-bars">
+          <i class="fa-solid fa-bars"></i>
+          <ul class="navbar-menu-dropdown">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="courses.html">My Courses</a></li>
+            <li><a href="dextai.html">Dext AI</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="parkguide.html">Park Guide</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="navbar-toggle-dropdown">
+        <div class="nav-toggle-btn-user">
+          <i class="fa-solid fa-user"></i>
+          <ul class="navbar-profile-dropdown">
+            <li><a href="registration.html">Sign Up</a></li>
+            <li><a href="login.html">Log In</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="text-box-registration">
+    <h1 class="text-title-registration">REGISTRATION FORM</h1>
+  </div>
+
+  <div class="registration-height-container">
+    <div class="registration-svg-form">
+      <div class="registration-svg">
+        <div class="registration-svg-container">
+          <img src="styles/images/registrationv2-img.png" class="registration-svg-image" alt="Registration Image" />
+        </div>
+      </div>
+
+      <div class="registration-form">
+        <form class="registration-form-body" id="registrationForm" novalidate>
+          <div class="registration-input-container">
+            <label for="firstname" class="registration-input-label">First Name:</label>
+            <div class="registration-input-text">
+              <span class="registration-icon"><i class="fa-solid fa-user"></i></span>
+              <input type="text" id="firstname" class="registration-input" placeholder="E.g. Angel" required maxlength="25" pattern="[A-Za-z\s]+" title="Only alphabetical characters allowed (A-Z or a-z)">
+            </div>
+          </div>
+
+          <div class="registration-input-container">
+            <label for="lastname" class="registration-input-label">Last Name:</label>
+            <div class="registration-input-text">
+              <span class="registration-icon"><i class="fa-solid fa-user"></i></span>
+              <input type="text" id="lastname" class="registration-input" placeholder="E.g. Lek" required maxlength="25" pattern="[A-Za-z\s]+" title="Only alphabetical characters allowed (A-Z or a-z)">
+            </div>
+          </div>
+
+          <div class="registration-input-container">
+            <label for="username" class="registration-input-label">Username:</label>
+            <div class="registration-input-text">
+              <span class="registration-icon"><i class="fa-solid fa-user"></i></span>
+              <input type="text" id="username" class="registration-input" placeholder="E.g. angellek" required maxlength="25" pattern="[A-Za-z\s]+" title="Only alphabetical characters allowed (A-Z or a-z)">
+            </div>
+          </div>
+
+          <div class="registration-input-container">
+            <label for="email" class="registration-input-label">Email Address:</label>
+            <div class="registration-input-text">
+              <span class="registration-icon"><i class="fa-solid fa-envelope"></i></span>
+              <input type="email" id="email" class="registration-input" placeholder="E.g. angellek@gmail.com" required>
+            </div>
+          </div>
+
+          <div class="registration-input-container">
+            <label for="password" class="registration-input-label">Password (25 characters maximum):</label>
+            <div class="registration-input-text">
+              <span class="registration-icon"><i class="fa-solid fa-key"></i></span>
+              <input type="text" id="password" class="registration-input" required maxlength="25" pattern="[A-Za-z\s]+" title="Only alphabetical characters allowed (A-Z or a-z)">
+            </div>
+          </div>
+
+          <div class="registration-input-container">
+            <label for="confirmpassword" class="registration-input-label">Confirm Password (25 characters maximum):</label>
+            <div class="registration-input-text">
+              <span class="registration-icon"><i class="fa-solid fa-key"></i></span>
+              <input type="text" id="confirmpassword" class="registration-input" required maxlength="25" pattern="[A-Za-z\s]+" title="Only alphabetical characters allowed (A-Z or a-z)">
+            </div>
+          </div>
+
+          <hr class="registration-hr">
+          <div class="registration-passw-requirement">
+            <br>
+            <a>Your password should be difficult to guess and follow these guidelines:</a>
+            <br><br/>
+            <ul>
+              <li>Maximum of 25 characters</li>
+              <li>Only alphabetical characters allowed (A-Z or a-z)</li>
+            </ul><br>
+          </div>
+
+          <button type="submit" class="register-btn">Register Now</button>
+
+          <div class="registration-alry-acc">
+            <br><br>
+            <p>Already have an account? <a href="login.html" title="Login" class="registration-custom-login-text">Login</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Replace this with your HTML version of footer if needed -->
+  <footer>
+    <div class="footer-container">
+    
+        <div class="footer-column">
+            <h3>Address</h3>
+            <p>Lot 218, KCLD,<br>Jalan Tapang, Kota Sentosa,<br> (93250 Kuching, Sarawak, Malaysia)</p>
+        </div>
+
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <ul>
+                <li>Email: <a href="mailto:info@borneoadventure.com">info@borneoadventure.com</a></li>
+                <li>Phone: <a href="tel:+1234567890">+123 456 7890</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Follow Us</h3>
+            <ul class="social-icons">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+            </ul>
+        </div>  
+    
+    </div>
+
+    <div class="footer-row">
+        <div class="footer-column">
+            <h3>Website Showcase</h3>
+            <ul>
+                <li><a href="https://youtu.be/qpcaOutmXec?si=K1WlNoX6gx7yJBhu" title="Website Showcase"><i class="fa-brands fa-square-youtube"></i> Our Presentation Video</a></li>
+            </ul>
+        </div>
+        
+    </div>
+    
+
+    <div class="footer-bottom">
+        <p> &copy; 2025 TerraGuide. All Rights Reserved</p>
+        
+    </div>
+
+</footer>
+
+</body>
+<script src="page.js"></script>
+</html>

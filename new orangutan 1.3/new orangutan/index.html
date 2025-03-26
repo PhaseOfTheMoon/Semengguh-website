@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Introduction about the project" />
+  <meta name="keywords" content="HTML5 tags" />
+  <meta name="author" content="Daryl LIM, Wei Chien CHIN"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="icon" type="image/x-icon" href="styles/images/TerraGuide-Favicon.png">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="page.js"></script>
+</head>
+
+
+
+
+
+<body>
+  <!-- Header (static replacement of PHP include) -->
+    <header class="header">
+      <nav id="navbar" class="navbar-template">
+        <div class="nav-logo">
+          <a href="index.html">
+              <img src="styles/images/TerraGuide_Logo.png" alt="TerraGuide Logo">
+          </a>
+        </div>
+  
+        <ul id="nav-links" class="nav-links">
+          <li class="navbar-item">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="navbar-item">
+            <a href="aboutus.html">About Us</a>
+          </li>
+  
+          <li class="navbar-dropdown">
+            <div class="navbar-dropbtn">
+              <a href="mycourses.html" class="navbar-dropbtn-text-btn">My Courses</a>
+              <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="navbar-dropdown-content">
+              <a href="tools.html">Course 1</a>
+              <a href="care.html">Course 2</a>
+            </div>
+          </li>
+  
+          <li class="navbar-dropdown">
+            <div class="navbar-dropbtn">
+              <a href="dextai.html" class="navbar-dropbtn-text-btn">Dext AI</a>
+              <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="navbar-dropdown-content">
+              <a href="alwin-profile.html">Alwin Ai</a>
+              <a href="chin-profile.html">Angel Ai</a>
+              <a href="razael-profile.html">Daryl Ai</a>
+              <a href="riad-profile.html">Aeron Ai</a>
+            </div>
+          </li>
+  
+          <li class="navbar-item">
+            <a href="blogs.html">Blogs</a>
+          </li>
+          <li class="navbar-item">
+            <a href="parkguide.html">Park Guide</a>
+          </li>
+  
+        <div class="nav-btn">
+          <a href="registration.html" class="action_btn1" id="signup">Sign Up</a>
+          <span class="divider"></span>
+          <a href="login.html" class="action_btn2" id="login">Log In</a>
+        </div>
+  
+        <!-- Mobile toggle menus -->
+        <div class="navbar-toggle-dropdown">
+          <div class="nav-toggle-btn-bars">
+            <i class="fa-solid fa-bars"></i>
+            <ul class="navbar-menu-dropdown">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="courses.html">My Courses</a></li>
+              <li><a href="dextai.html">Dext AI</a></li>
+              <li><a href="blogs.html">Blogs</a></li>
+              <li><a href="parkguide.html">Park Guide</a></li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="navbar-toggle-dropdown">
+          <div class="nav-toggle-btn-user">
+            <i class="fa-solid fa-user"></i>
+            <ul class="navbar-profile-dropdown">
+              <li><a href="registration.html">Sign Up</a></li>
+              <li><a href="login.html">Log In</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+  
+  
+
+    <!-- slideshow 1 -->
+
+    <div class="registration-height-container">
+      <div class="registration-svg-form-index"> <!-- green box -->
+    
+        <div class="slideshow-container">
+    
+          <!-- Slide 1 -->
+          <div class="mySlides">
+            <div class="slide-left">
+              <h1>BOOK A PARK GUIDE</h1>
+              <p><STRONG>Park Guide can help you explore the entire Semenggoh Nature Reserve.</STRONG></p>
+              <p>Book it Now NGA!</p>
+            </div>
+            <div class="slide-right">
+              <img src="styles/images/icon1.svg" alt="Slide 1 Image">
+              <a href="dexai.html" class="slide-btn">BOOK NOW</a>
+            </div>
+          </div>
+    
+          <!-- Slide 2 -->
+          <div class="mySlides">
+            <div class="slide-left">
+              <p>Slide 2: Explore our eco-friendly mission.</p>
+            </div>
+            <div class="slide-right">
+              <img src="styles/images/icon2.svg" alt="Slide 2 Image">
+              <a href="dexai.html" class="slide-btn">Go to Dexai</a>
+            </div>
+          </div>
+    
+          <!-- Slide 3 -->
+          <div class="mySlides">
+            <div class="slide-left">
+              <p>Slide 3: Join us to protect wildlife!</p>
+            </div>
+            <div class="slide-right">
+              <img src="styles/images/icon3.svg" alt="Slide 3 Image">
+              <a href="dexai.html" class="slide-btn">Go to Dexai</a>
+            </div>
+          </div>
+    
+          <!-- Dots under slideshow (inside green box) -->
+          <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+    
+
+
+
+
+
+  <!-- Footer (static replacement of PHP include) -->
+  <footer>
+    <div class="footer-container">
+    
+        <div class="footer-column">
+            <h3>Address</h3>
+            <p>Lot 218, KCLD,<br>Jalan Tapang, Kota Sentosa,<br> (93250 Kuching, Sarawak, Malaysia)</p>
+        </div>
+
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <ul>
+                <li>Email: <a href="mailto:info@borneoadventure.com">info@borneoadventure.com</a></li>
+                <li>Phone: <a href="tel:+1234567890">+123 456 7890</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Follow Us</h3>
+            <ul class="social-icons">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+            </ul>
+        </div>  
+    
+    </div>
+
+    <div class="footer-row">
+        <div class="footer-column">
+            <h3>Website Showcase</h3>
+            <ul>
+                <li><a href="https://youtu.be/qpcaOutmXec?si=K1WlNoX6gx7yJBhu" title="Website Showcase"><i class="fa-brands fa-square-youtube"></i> Our Presentation Video</a></li>
+            </ul>
+        </div>
+        
+    </div>
+    
+
+    <div class="footer-bottom">
+        <p> &copy; 2025 TerraGuide. All Rights Reserved</p>
+        
+    </div>
+
+</footer>
+
+  
+</body>
+<script src="page.js"></script>
+</html>
