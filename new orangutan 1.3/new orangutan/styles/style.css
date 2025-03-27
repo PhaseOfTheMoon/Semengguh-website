@@ -6590,3 +6590,113 @@ footer {
   font-weight: bold;
   font-size: 14px;
 }
+
+
+
+
+/*Jun Zhen*/
+/* === Timetable Section === */
+.timetable-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.timetable-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.timetable-header h2 {
+  color: #F6EFDC;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.view-all-btn {
+  background-color: transparent;
+  color: #F6EFDC;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.view-all-btn:hover {
+  color: #fbd97a;
+  font-weight: bold;
+}
+
+.timetable-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* This is green box 3, 4, 5 start */
+.timetable-box {
+  background-color: #4E6E4E;
+  border-radius: 12px;
+  padding: 20px;
+  color: #F6EFDC;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.time-badge {
+  background-color: #F6EFDC;
+  color: #4E6E4E;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 15px;
+  width: fit-content;
+}
+
+.timetable-box h3 {
+  color: #F6EFDC;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.timetable-box p {
+  color: #F6EFDC;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+/* This is green box 3, 4, 5 ends */
+
+/* Responsive design for timetable section */
+@media (max-width: 1024px) {
+  .timetable-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .timetable-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .timetable-box {
+    min-height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .timetable-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .timetable-box {
+    min-height: 160px;
+  }
+}
