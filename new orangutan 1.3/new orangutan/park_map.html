@@ -112,6 +112,19 @@
       <div id="map"></div>
     </div>
 
+    <div class="P-container">
+      <h3>Popular Tourist Spot <span class="tgl-btn" onclick="toggleSpots()">See All</span></h3>
+      <div class="pm-grid" id="pm-spots">
+        <div class="card">Top 1 - Park 1</div>
+        <div class="card">Top 2 - Park 2</div>
+        <div class="card">Top 3 - Park 3</div>
+        <div class="card hidden">Top 4 - Park 4</div>
+        <div class="card hidden">Top 5 - Park 5</div>
+        <div class="card hidden">Top 6 - Park 6</div>
+        <div class="card hidden">Top 7 - Park 7</div>
+      </div>
+    </div>
+
   <!-- Footer (static replacement of PHP include) -->
   <footer>
     <div class="footer-container">
@@ -160,33 +173,53 @@
 
 </body>
 <script>
-  // map domain
-  function initMap() {
-  var defaultLocation = { lat: 1.4637, lng: 110.3571 }; // Semenggoh address
-  var map = new google.maps.Map(document.getElementById("map"), {
-      center: defaultLocation,
-      zoom: 15,
-      mapTypeId: "satellite"
-  });
+// map domain
+function initMap() {
+var defaultLocation = { lat: 1.4637, lng: 110.3571 }; // Semenggoh address
+var map = new google.maps.Map(document.getElementById("map"), {
+    center: defaultLocation,
+    zoom: 15,
+    mapTypeId: "satellite"
+});
 
-  var marker = new google.maps.Marker({
-      position: defaultLocation,
-      map: map,
-      title: "Semenggoh Nature Reserve"
-  });
+var marker = new google.maps.Marker({
+    position: defaultLocation,
+    map: map,
+    title: "Semenggoh Nature Reserve"
+});
 
-  document.getElementById("searchInput").addEventListener("change", function() {
-      var geocoder = new google.maps.Geocoder();
-      geocoder.geocode({ address: this.value }, function(results, status) {
-          if (status === "OK") {
-              map.setCenter(results[0].geometry.location);
-              marker.setPosition(results[0].geometry.location);
-          } else {
-              alert("The place cannot be found: " + status);
-          }
-      });
-  });
- }
+document.getElementById("searchInput").addEventListener("change", function() {
+    var geocoder = new google.maps.Geocoder();
+    geocoder.geocode({ address: this.value }, function(results, status) {
+        if (status === "OK") {
+            map.setCenter(results[0].geometry.location);
+            marker.setPosition(results[0].geometry.location);
+        } else {
+            alert("The place cannot be found: " + status);
+        }
+    });
+});
+}
+
+let expanded = false;
+function toggleSpots() {
+    const hiddenCards = document.querySelectorAll(".card.hidden");
+    const button = document.querySelector(".tgl-btn");
+
+    if (expanded) {
+        
+        document.querySelectorAll(".card").forEach((card, index) => {
+            if (index >= 3) card.classList.add("hidden");
+        });
+        button.textContent = "See All";
+    } else {
+    
+        hiddenCards.forEach(card => card.classList.remove("hidden"));
+        button.textContent = "See Less";
+    }
+    
+    expanded = !expanded;
+}
 </script>
 
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1FfgBhctz90Abx6Oc7db_AnqSBUSvGNA&callback=initMap"></script>
