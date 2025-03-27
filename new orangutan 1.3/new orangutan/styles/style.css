@@ -6805,3 +6805,135 @@ footer {
   margin-bottom: 30px;
   display: inline-block;
 }
+
+/* Park Guides Section */
+.parkguide-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+.parkguide-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.parkguide-title {
+  color: #000000;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+}
+
+.parkguide-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 3px;
+  background-color: #000000;
+}
+
+.parkguide-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Parkguide Green Box 1, 2, 3 styles */
+.parkguide-box {
+  background-color: #4E6E4E;
+  border-radius: 12px;
+  padding: 20px;
+  color: #F6EFDC;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  min-height: 400px;
+  max-width: 280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.guide-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background-color: #F6EFDC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.guide-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.parkguide-box h3 {
+  color: #F6EFDC;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.parkguide-box p {
+  color: #F6EFDC;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Responsive design for park guides section */
+@media (max-width: 1024px) {
+  .parkguide-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .parkguide-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .parkguide-box {
+    min-height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .parkguide-title-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+/* Parkguide.html Page Styles */
+.parkguide-page-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 120px auto 40px;
+  padding: 0 20px;
+  position: relative;
+}
+
+.parkguide-page-title {
+  color: #000000;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  display: inline-block;
+}
