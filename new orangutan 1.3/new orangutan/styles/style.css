@@ -83,6 +83,29 @@
 
 
 
+/* green box 2 timetable */
+
+.green-box-2 {
+  width: 300px;
+  height: 200px;
+  background-color: #4E6E4E;
+  border-radius: 12px;
+  padding: 20px;
+  color: white;
+  font-size: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+  /* Position it on screen */
+  position: absolute;
+  top: 150px;
+  left: 400px;
+}
+
+/* end of green box 2 timetable */
+
+
+
+
 
 
 /*===screenshot blocker===*/
