@@ -81,6 +81,55 @@
 }
 /*end of index slideshow 1 */
 
+/* Start of Map in index homepage */
+
+/* Wrap both green boxes side by side */
+.container-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px; /* space between the boxes */
+  padding: 20px;
+  position: absolute; /* so it's pinned to upper-left corner */
+  top: 20px;
+  left: 20px;
+  z-index: 999;
+}
+
+/* First Green Box (already styled by you) */
+.registration-svg-form-index {
+  width: 600px;
+  background-color: #4E6E4E;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: white;
+  padding: 20px;
+}
+
+/* Second Green Box */
+.map-box {
+  width: 300px;
+  height: auto;
+  background-color: #4E6E4E;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style the image inside map box */
+.map-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+/* end of map in index homepage */
 
 
 /* green box 2 timetable */
@@ -91,14 +140,14 @@
   background-color: #4E6E4E;
   border-radius: 12px;
   padding: 20px;
-  color: white;
+  color: black;
   font-size: 1rem;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 
   /* Position it on screen */
   position: absolute;
   top: 150px;
-  left: 400px;
+  right: 400px;
 }
 
 /* end of green box 2 timetable */

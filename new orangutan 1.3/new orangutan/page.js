@@ -77,3 +77,4 @@ function currentSlide(n) {
 window.onload = function () {
   showSlides(slideIndex);
 };
+
