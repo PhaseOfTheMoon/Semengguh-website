@@ -81,6 +81,138 @@
 }
 /*end of index slideshow 1 */
 
+/* Start of Map in index homepage */
+
+/* Wrap both green boxes side by side */
+.container-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px; /* space between the boxes */
+  padding: 20px;
+  position: absolute; /* so it's pinned to upper-left corner */
+  top: 20px;
+  left: 20px;
+  z-index: 999;
+}
+
+/* First Green Box (already styled by you) */
+.registration-svg-form-index {
+  width: 600px;
+  background-color: #4E6E4E;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: white;
+  padding: 20px;
+}
+
+/* Second Green Box */
+.map-box {
+  width: 300px;
+  height: auto;
+  background-color: #4E6E4E;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style the image inside map box */
+.map-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+/* end of map in index homepage */
+
+
+/* green box 2 timetable */
+
+.green-box-2 {
+  width: 300px;
+  height: 200px;
+  background-color: #4E6E4E;
+  border-radius: 12px;
+  padding: 20px;
+  color: black;
+  font-size: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+  /* Position it on screen */
+  position: absolute;
+  top: 150px;
+  right: 400px;
+}
+
+/* end of green box 2 timetable */
+
+
+
+
+/* css for blog 1 */
+
+/* blog 1 image */
+.smg1blogs {
+  padding: 100px;
+  position: relative;
+  min-height: 400px; /* Adjust as needed */
+  max-width: 890px; /* Adjust as needed */
+  margin: 0 auto; /* Center the boxes */
+  display: flex;
+}
+/*end of blog 1 iamge */
+
+
+/* blog h1 */
+
+.smg1blogsh1 {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* end of blog h1 */
+
+/* paragraph blog 1 */
+.smg1blogsp1{
+  text-align: left; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  text-indent: 50px;
+  padding: 30px;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+.smg1blogsp2{
+  text-align: left; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  text-indent: 50px;
+  padding: 20px;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.smg1blogsp3{
+  text-align: left; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  text-indent: 50px;
+  padding: 20px;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* end of blog 1 */
 
 
 
@@ -6639,4 +6771,184 @@ footer {
   color: #4d6b4a;
   font-weight: bold;
   font-size: 14px;
+}
+
+
+
+
+/*Jun Zhen*/
+/* === Timetable Section === */
+.timetable-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+.timetable-title {
+  color: #000000;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+}
+
+.timetable-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 3px;
+  background-color: #000000;
+}
+
+.timetable-header {
+  display: flex;
+  justify-content: flex-end; /* Changed from space-between to flex-end since we removed the h2 */
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.timetable-header h2 {
+  color: #F6EFDC;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.view-all-btn {
+  background-color: transparent;
+  color: #F6EFDC;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.view-all-btn:hover {
+  color: #fbd97a;
+  font-weight: bold;
+}
+
+.timetable-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.timetable-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.see-all-btn {
+  background-color: transparent;
+  color: #4E6E4E;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 15px;
+  border: 1px solid #4E6E4E;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.see-all-btn:hover {
+  background-color: #4E6E4E;
+  color: #F6EFDC;
+}
+
+/* This is green box 3, 4, 5 start */
+.timetable-box {
+  background-color: #4E6E4E;
+  border-radius: 12px;
+  padding: 20px;
+  color: #F6EFDC;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  min-height: 400px; /* Adjust as needed */
+  max-width: 280px; /* Adjust as needed */
+  margin: 0 auto; /* Center the boxes */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.time-badge {
+  background-color: #F6EFDC;
+  color: #4E6E4E;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+}
+
+.timetable-box h3 {
+  color: #F6EFDC;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.timetable-box p {
+  color: #F6EFDC;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+/* This is green box 3, 4, 5 ends */
+
+/* Responsive design for timetable section */
+@media (max-width: 1024px) {
+  .timetable-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .timetable-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .timetable-box {
+    min-height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .timetable-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .timetable-box {
+    min-height: 160px;
+  }
+}
+
+
+/* Timetable.html Page Styles */
+.timetable-page-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 120px auto 40px;
+  padding: 0 20px;
+  position: relative;
+}
+
+.timetable-page-title {
+  color: #000000;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  display: inline-block;
 }
