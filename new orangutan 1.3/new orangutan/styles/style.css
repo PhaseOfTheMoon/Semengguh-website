@@ -81,138 +81,6 @@
 }
 /*end of index slideshow 1 */
 
-/* Start of Map in index homepage */
-
-/* Wrap both green boxes side by side */
-.container-wrapper {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px; /* space between the boxes */
-  padding: 20px;
-  position: absolute; /* so it's pinned to upper-left corner */
-  top: 20px;
-  left: 20px;
-  z-index: 999;
-}
-
-/* First Green Box (already styled by you) */
-.registration-svg-form-index {
-  width: 600px;
-  background-color: #4E6E4E;
-  border-radius: 10px;
-  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  color: white;
-  padding: 20px;
-}
-
-/* Second Green Box */
-.map-box {
-  width: 300px;
-  height: auto;
-  background-color: #4E6E4E;
-  border-radius: 10px;
-  padding: 15px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Style the image inside map box */
-.map-image {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  object-fit: contain;
-}
-
-/* end of map in index homepage */
-
-
-/* green box 2 timetable */
-
-.green-box-2 {
-  width: 300px;
-  height: 200px;
-  background-color: #4E6E4E;
-  border-radius: 12px;
-  padding: 20px;
-  color: black;
-  font-size: 1rem;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-
-  /* Position it on screen */
-  position: absolute;
-  top: 150px;
-  right: 400px;
-}
-
-/* end of green box 2 timetable */
-
-
-
-
-/* css for blog 1 */
-
-/* blog 1 image */
-.smg1blogs {
-  padding: 100px;
-  position: relative;
-  min-height: 400px; /* Adjust as needed */
-  max-width: 890px; /* Adjust as needed */
-  margin: 0 auto; /* Center the boxes */
-  display: flex;
-}
-/*end of blog 1 iamge */
-
-
-/* blog h1 */
-
-.smg1blogsh1 {
-  font-family: 'Times New Roman', Times, serif;
-}
-
-/* end of blog h1 */
-
-/* paragraph blog 1 */
-.smg1blogsp1{
-  text-align: left; 
-  display: flex;
-  flex-direction: column; 
-  align-items: center;
-  text-indent: 50px;
-  padding: 30px;
-  font-size: 20px;
-  font-family: 'Times New Roman', Times, serif;
-}
-
-
-.smg1blogsp2{
-  text-align: left; 
-  display: flex;
-  flex-direction: column; 
-  align-items: center;
-  text-indent: 50px;
-  padding: 20px;
-  font-size: 20px;
-  font-family: 'Times New Roman', Times, serif;
-}
-
-.smg1blogsp3{
-  text-align: left; 
-  display: flex;
-  flex-direction: column; 
-  align-items: center;
-  text-indent: 50px;
-  padding: 20px;
-  font-size: 20px;
-  font-family: 'Times New Roman', Times, serif;
-}
-
-/* end of blog 1 */
 
 
 
@@ -6689,22 +6557,6 @@ footer {
   border-bottom: 2px solid #999; 
 }
 
-.map-header{
-  max-width: 1000px; 
-  margin: auto;
-}
-
-.map-header h3 {
-  display: flex;
-  justify-content: space-between; 
-  align-items: center; 
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 5px;
-  padding-bottom: 5px; 
-  border-bottom: 2px solid #999; 
-}
-
 .pm-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
@@ -6716,14 +6568,14 @@ footer {
 .card {
   background-color: #4E6B50; 
   border-radius: 10px;
-  padding: 15px; /* Reduced padding */
+  padding: 20px;
   width: 250px;
-  height: 320px; /* Slightly reduced height */
+  height: 250px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; /* Align elements closer */
+  justify-content: space-between;
   position: relative;
 }
 
@@ -6732,14 +6584,14 @@ footer {
   font-size: 14px;
   color: white;
   background-color: rgba(0, 0, 0, 0.7);
-  padding: 5px 12px;
-  border-radius: 50px;
-  margin-bottom: 5px; /* Reduced spacing */
+  padding: 5px 15px;
+  border-radius: 20px;
+  margin-bottom: 10px; 
 }
 
 .image-container {
   width: 100px;
-  height: 100px; /* Adjusted to fit image size */
+  height: 100px;
 }
 
 .card-image {
@@ -6747,20 +6599,21 @@ footer {
   height: 100px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 5px; /* Reduced spacing */
 }
 
 .card-title {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: bold;
-  margin-top: 5px; /* Reduced spacing */
+  margin-top: 20px;
 }
 
 .card-description {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: white;
-  margin-top: 5px; /* Reduced spacing */
+  margin-top: 10px;
 }
+
+
 
 .hidden {
   display: none;
@@ -6946,6 +6799,138 @@ footer {
 }
 
 .timetable-page-title {
+  color: #000000;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+/* Park Guides Section */
+.parkguide-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+.parkguide-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.parkguide-title {
+  color: #000000;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+}
+
+.parkguide-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 3px;
+  background-color: #000000;
+}
+
+.parkguide-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Parkguide Green Box 1, 2, 3 styles */
+.parkguide-box {
+  background-color: #4E6E4E;
+  border-radius: 12px;
+  padding: 20px;
+  color: #F6EFDC;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  min-height: 400px;
+  max-width: 280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.guide-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background-color: #F6EFDC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.guide-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.parkguide-box h3 {
+  color: #F6EFDC;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.parkguide-box p {
+  color: #F6EFDC;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Responsive design for park guides section */
+@media (max-width: 1024px) {
+  .parkguide-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .parkguide-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .parkguide-box {
+    min-height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .parkguide-title-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+/* Parkguide.html Page Styles */
+.parkguide-page-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 120px auto 40px;
+  padding: 0 20px;
+  position: relative;
+}
+
+.parkguide-page-title {
   color: #000000;
   font-size: 2.5rem;
   font-weight: bold;
