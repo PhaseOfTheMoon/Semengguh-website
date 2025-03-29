@@ -168,6 +168,7 @@
 
     <div class="green-box-map-aeron">
       <p>The Parks Map</p>
+      <div id="map"></div>
     </div>
     
 
@@ -287,5 +288,37 @@
 
   
 </body>
+
+<script>
+  // map domain
+  function initMap() {
+  var defaultLocation = { lat: 1.4637, lng: 110.3571 }; // Semenggoh address
+  var map = new google.maps.Map(document.getElementById("map"), {
+      center: defaultLocation,
+      zoom: 15,
+      mapTypeId: "satellite"
+  });
+  
+  var marker = new google.maps.Marker({
+      position: defaultLocation,
+      map: map,
+      title: "Semenggoh Nature Reserve"
+  });
+  
+  document.getElementById("searchInput").addEventListener("change", function() {
+      var geocoder = new google.maps.Geocoder();
+      geocoder.geocode({ address: this.value }, function(results, status) {
+          if (status === "OK") {
+              map.setCenter(results[0].geometry.location);
+              marker.setPosition(results[0].geometry.location);
+          } else {
+              alert("The place cannot be found: " + status);
+          }
+      });
+  });
+  }
+  </script>
+  
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1FfgBhctz90Abx6Oc7db_AnqSBUSvGNA&callback=initMap"></script>
 <script src="page.js"></script>
 </html>
