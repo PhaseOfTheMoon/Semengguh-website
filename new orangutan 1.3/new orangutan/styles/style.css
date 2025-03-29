@@ -6699,11 +6699,10 @@ footer {
   margin-top: 10px;
 }
 
-
-
 .hidden {
   display: none;
 }
+
 
 .tgl-btn {
   cursor: pointer;
@@ -6816,6 +6815,16 @@ footer {
   color: white;
 }
 
+.b-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.2s;
+}
+
+.hidden {
+  display: none;
+}
 
 /*Jun Zhen*/
 /* === Timetable Section === */

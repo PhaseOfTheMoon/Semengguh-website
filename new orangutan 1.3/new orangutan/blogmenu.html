@@ -102,18 +102,21 @@
   <div class="b-container">
     <h3>Popular Tourist Spot <span class="tgl-btn" onclick="toggleSpots()">See All</span></h3>
     <div class="pm-grid" id="pm-spots">
-      <div class="b-card">
-        <div class="b-image-container">
-          <img src="styles/images/smg1.png" alt="The History of Semenggoh..." class=" b-card-image">
-        </div>
+      <a href="blogs.html" class="b-card-link">
+        <div class="b-card">
+          <div class="b-image-container">
+            <img src="styles/images/smg1.png" alt="The History of Semenggoh..." class="b-card-image">
+          </div>
           <div class="b-content">
             <div class="b-card-title">The History of Semenggoh...</div>
             <div class="b-card-description">
               Semenggoh Wildlife Centre enables tourists to interact with wild orang utans and enjoy the orang
               utans feeding time for the amazing experience.
+            </div>
           </div>
         </div>
-      </div>
+      </a>
+      <a href="blogs2.html" class="b-card-link">
       <div class="b-card">
         <div class="b-image-container">
           <img src="styles/images/smg2.png" alt="Species of Orang Utan" class=" b-card-image">
@@ -125,22 +128,23 @@
           </div>
         </div>
       </div>
+      </a>
       <div class="coming-soon-card">
         <div class="coming-soon-box">Coming Soon</div>
         <div class="coming-soon-title">Coming Soon</div>
         <div class="coming-soon-text">Coming Soon</div>
      </div>    
-     <div class="coming-soon-card">
+     <div class="coming-soon-card hidden">
       <div class="coming-soon-box">Coming Soon</div>
       <div class="coming-soon-title">Coming Soon</div>
       <div class="coming-soon-text">Coming Soon</div>
     </div>  
-    <div class="coming-soon-card">
+    <div class="coming-soon-card hidden">
       <div class="coming-soon-box">Coming Soon</div>
       <div class="coming-soon-title">Coming Soon</div>
       <div class="coming-soon-text">Coming Soon</div>
     </div>  
-    <div class="coming-soon-card">
+    <div class="coming-soon-card hidden">
     <div class="coming-soon-box">Coming Soon</div>
     <div class="coming-soon-title">Coming Soon</div>
     <div class="coming-soon-text">Coming Soon</div>
@@ -197,56 +201,24 @@
 
 </body>
 <script>
-// map domain
-function initMap() {
-var defaultLocation = { lat: 1.4637, lng: 110.3571 }; // Semenggoh address
-var map = new google.maps.Map(document.getElementById("map"), {
-    center: defaultLocation,
-    zoom: 15,
-    mapTypeId: "satellite"
-});
-
-var marker = new google.maps.Marker({
-    position: defaultLocation,
-    map: map,
-    title: "Semenggoh Nature Reserve"
-});
-
-document.getElementById("searchInput").addEventListener("change", function() {
-    var geocoder = new google.maps.Geocoder();
-    geocoder.geocode({ address: this.value }, function(results, status) {
-        if (status === "OK") {
-            map.setCenter(results[0].geometry.location);
-            marker.setPosition(results[0].geometry.location);
-        } else {
-            alert("The place cannot be found: " + status);
-        }
-    });
-});
-}
-
 let expanded = false;
 function toggleSpots() {
-    const hiddenCards = document.querySelectorAll(".card.hidden");
+    const cards = document.querySelectorAll(".coming-soon-card");
     const button = document.querySelector(".tgl-btn");
 
     if (expanded) {
-        
-        document.querySelectorAll(".card").forEach((card, index) => {
-            if (index >= 3) card.classList.add("hidden");
+        cards.forEach((card, index) => {
+            if (index > 0) card.classList.add("hidden");
         });
         button.textContent = "See All";
     } else {
-    
-        hiddenCards.forEach(card => card.classList.remove("hidden"));
+        cards.forEach(card => card.classList.remove("hidden"));
         button.textContent = "See Less";
     }
-    
+
     expanded = !expanded;
 }
+
 </script>
-
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1FfgBhctz90Abx6Oc7db_AnqSBUSvGNA&callback=initMap"></script>
-
 
 </html>
