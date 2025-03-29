@@ -99,96 +99,74 @@
       </nav>
     </header>
 
-    <div class="title-container">
-      <h3 class="section-title">Semenggoh Park Map</h3>
-      <div class="underline"></div>
-    </div>
-  
-    <div class="search-container">
-      <input id="searchInput" class="search-box" type="text" placeholder="search place" value="Semenggoh">
-    </div>
-  
-    <div class="map-container">
-      <div id="map"></div>
+    <!-- Start Of Blogs -->
+    <div class ="smg1blogs">
+    <img src="styles/images/smg1.png" alt="TerraGuide Logo">
     </div>
 
-    <div class="P-container">
-      <h3>Popular Tourist Spot <span class="tgl-btn" onclick="toggleSpots()">See All</span></h3>
-      <div class="pm-grid" id="pm-spots">
-        <div class="card">
-          <div class="top-text">Top 1</div>
-          <div class="image-container">
-            <img src="styles/images/test.jpg" alt="San Francisco" class="card-image">
-          </div>
-            <div class="card-title">San Francisco</div>
-            <div class="card-description">
-              San Francisco is a part of california
-            </div>
-        </div>
-        <div class="card">
-          <div class="top-text">Top 2</div>
-          <div class="image-container">
-            <img src="styles/images/test.jpg" alt="San Francisco" class="card-image">
-          </div>
-            <div class="card-title">San Francisco</div>
-            <div class="card-description">
-              San Francisco is a part of california
-            </div>
-        </div>
-        <div class="card">
-          <div class="top-text">Top 3</div>
-          <div class="image-container">
-            <img src="styles/images/test.jpg" alt="San Francisco" class="card-image">
-          </div>
-            <div class="card-title">San Francisco</div>
-            <div class="card-description">
-              San Francisco is a part of california
-            </div>
-        </div>
-        <div class="card hidden">
-          <div class="top-text">Top 4</div>
-          <div class="image-container">
-            <img src="styles/images/test.jpg" alt="San Francisco" class="card-image">
-          </div>
-            <div class="card-title">San Francisco</div>
-            <div class="card-description">
-              San Francisco is a part of california
-            </div>
-        </div>
-        <div class="card hidden">
-          <div class="top-text">Top 5</div>
-          <div class="image-container">
-            <img src="styles/images/test.jpg" alt="San Francisco" class="card-image">
-          </div>
-            <div class="card-title">San Francisco</div>
-            <div class="card-description">
-              San Francisco is a part of california
-            </div>
-        </div>
-        <div class="card hidden">
-          <div class="top-text">Top 6</div>
-          <div class="image-container">
-            <img src="styles/images/test.jpg" alt="San Francisco" class="card-image">
-          </div>
-            <div class="card-title">San Francisco</div>
-            <div class="card-description">
-              San Francisco is a part of california
-            </div>
-        </div>
-        <div class="card hidden">
-          <div class="top-text">Top 7</div>
-          <div class="image-container">
-            <img src="styles/images/test.jpg" alt="San Francisco" class="card-image">
-          </div>
-            <div class="card-title">San Francisco</div>
-            <div class="card-description">
-              San Francisco is a part of california
-            </div>
-        </div>
-      </div>
+    <div class ="smg1blogsh1">
+    <h1>The History of Semengguh</h1>
     </div>
 
-  <!-- Footer (static replacement of PHP include) -->
+
+    <div class ="smg1blogsp1">
+    Semenggoh Wildlife Centre enables tourists to interact with wild orang utans and enjoy the orang
+      utans feeding time for the amazing experience. For more than thirty years, Semenggoh’s staffs
+      have trained young orang utans how to survive in the wild.The programme has successfully provided those orang utans, which had been orphaned or rescued from captivity, to have their
+      freedom by living in a natural habitat. 
+
+    </div>
+      <div class ="smg1blogsp2">
+      The tour operators usually arrange trips to Semenggoh
+      Wildlife Centre combining with other local attractions. With the potential attraction and
+      marketability of Semenggoh Wildlife Centre, it is vitally important to look into the tourists’
+      perceptions towards destination competitiveness. To date, destination competitiveness research
+        has been matured enough to clearly define the competitiveness and data gathering is likely to be
+        more feasible and reliable. This is evident from the research by Liu (2006), who asserts that the
+        Malaysian context in rural tourism is mostly related to the determined ethnic disparities,
+        geographically, socio-culturally and economically.
+    </div>
+
+    <div class ="smg1blogsp3">
+Jenkins (1999) conducted a research on the conception of destination images as perceived by
+tourists and those reflected in different academic subjects and also by practitioners. According to
+Lawson and Bovy (1977), definition for destination image refers to the expression of all
+imaginations, objective knowledge and emotional thoughts of a group of people or even an
+individual. To improve and sustain destination competitiveness, it is vital to acknowledge that
+higher tourist satisfaction level should be established by creating a positive post-purchase tourist
+behaviour (Yoon & Uysal, 2003). In such case, Alegre and Garau (2010) conducted a survey to
+examine the tourists’ overall satisfaction and dissatisfaction as well as their intention to return to
+the specific destination. Nature resources refer to the naturally occurring sources of wealth for a specific region which may
+consist of land, forests, mineral deposits and water that occur in nature and can be used for
+economic gain. Nature resources are important for human to survive and contribute to the economy
+of the nation in which they exist. Mazilu (2012) defined destination as a complex element
+connecting geographical resources or the natural and anthropic dimensions that are accessible by
+tourists. Dugulan, Balaure, Popescu and Veghes (2010) strong agree that natural resources and cultural heritage are two important facets in tourism’s sustainable development. Such contribution
+is crucial to the whole competitiveness of the tourism industry and its performances by qualitative
+point of view. As cited in Dugulan, et.al. (2010), Lumsdon (1997) proposes that natural resource
+is one of the main pillars to support tourist destination competitiveness.
+
+    </div>
+
+
+      
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer (static replacement of PHP include) -->
   <footer>
     <div class="footer-container">
     
@@ -235,57 +213,6 @@
 </footer>
 
 </body>
-<script>
-// map domain
-function initMap() {
-var defaultLocation = { lat: 1.4637, lng: 110.3571 }; // Semenggoh address
-var map = new google.maps.Map(document.getElementById("map"), {
-    center: defaultLocation,
-    zoom: 15,
-    mapTypeId: "satellite"
-});
-
-var marker = new google.maps.Marker({
-    position: defaultLocation,
-    map: map,
-    title: "Semenggoh Nature Reserve"
-});
-
-document.getElementById("searchInput").addEventListener("change", function() {
-    var geocoder = new google.maps.Geocoder();
-    geocoder.geocode({ address: this.value }, function(results, status) {
-        if (status === "OK") {
-            map.setCenter(results[0].geometry.location);
-            marker.setPosition(results[0].geometry.location);
-        } else {
-            alert("The place cannot be found: " + status);
-        }
-    });
-});
-}
-
-let expanded = false;
-function toggleSpots() {
-    const hiddenCards = document.querySelectorAll(".card.hidden");
-    const button = document.querySelector(".tgl-btn");
-
-    if (expanded) {
-        
-        document.querySelectorAll(".card").forEach((card, index) => {
-            if (index >= 3) card.classList.add("hidden");
-        });
-        button.textContent = "See All";
-    } else {
-    
-        hiddenCards.forEach(card => card.classList.remove("hidden"));
-        button.textContent = "See Less";
-    }
-    
-    expanded = !expanded;
-}
-</script>
-
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1FfgBhctz90Abx6Oc7db_AnqSBUSvGNA&callback=initMap"></script>
-
-
+<script src="page.js"></script>
 </html>
+  
