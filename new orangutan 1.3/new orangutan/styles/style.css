@@ -219,8 +219,10 @@
 
 
 .slideshow-container-2 {
-  width: 1900px;
-  position: relative;
+  position: absolute;
+  top: 500px; /* Adjust this value to move it up */
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .mySlides2 {
