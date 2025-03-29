@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Park Guide Profile" />
+  <meta name="keywords" content="HTML5 tags, park guide, profile" />
+  <meta name="author" content="Daryl LIM, Wei Chien CHIN"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Park Guide Profile | TerraGuide</title>
+  <link rel="icon" type="image/x-icon" href="styles/images/TerraGuide-Favicon.png">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="page.js"></script>
+</head>
+
+<body>
+  <!-- Header (static replacement of PHP include) -->
+  <header class="header">
+    <nav id="navbar" class="navbar-template">
+      <div class="nav-logo">
+        <a href="index.html">
+            <img src="styles/images/TerraGuide_Logo.png" alt="TerraGuide Logo">
+        </a>
+      </div>
+
+      <ul id="nav-links" class="nav-links">
+        <li class="navbar-item">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="navbar-item">
+          <a href="aboutus.html">About Us</a>
+        </li>
+
+        <li class="navbar-dropdown">
+          <div class="navbar-dropbtn">
+            <a href="mycourses.html" class="navbar-dropbtn-text-btn">My Courses</a>
+            <i class="fa fa-caret-down"></i>
+          </div>
+          <div class="navbar-dropdown-content">
+            <a href="tools.html">Course 1</a>
+            <a href="care.html">Course 2</a>
+          </div>
+        </li>
+
+        <li class="navbar-dropdown">
+          <div class="navbar-dropbtn">
+            <a href="dextai.html" class="navbar-dropbtn-text-btn">Dext AI</a>
+            <i class="fa fa-caret-down"></i>
+          </div>
+          <div class="navbar-dropdown-content">
+            <a href="alwin-profile.html">Alwin's Profile</a>
+            <a href="chin-profile.html">Chin's Profile</a>
+            <a href="razael-profile.html">Razael's Profile</a>
+            <a href="riad-profile.html">Riad's Profile</a>
+          </div>
+        </li>
+
+        <li class="navbar-dropdown">
+          <div class="navbar-dropbtn">
+            <a href="blogs.html" class="navbar-dropbtn-text-btn">Blogs</a>
+            <i class="fa fa-caret-down"></i>
+          </div>
+          <div class="navbar-dropdown-content">
+            <a href="blogmenu.html">Blogs</a>
+          </div>
+        </li>
+        
+        <li class="navbar-item">
+          <a href="parkguide.html">Park Guide</a>
+        </li>
+      </ul>
+
+      <div class="nav-btn">
+        <a href="registration.html" class="action_btn1" id="signup">Sign Up</a>
+        <span class="divider"></span>
+        <a href="login.html" class="action_btn2" id="login">Log In</a>
+      </div>
+
+      <!-- Mobile toggle menus -->
+      <div class="navbar-toggle-dropdown">
+        <div class="nav-toggle-btn-bars">
+          <i class="fa-solid fa-bars"></i>
+          <ul class="navbar-menu-dropdown">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="courses.html">My Courses</a></li>
+            <li><a href="dextai.html">Dext AI</a></li>
+            <li><a href="blogmenu.html">Blogs</a></li>
+            <li><a href="parkguide.html">Park Guide</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="navbar-toggle-dropdown">
+        <div class="nav-toggle-btn-user">
+          <i class="fa-solid fa-user"></i>
+          <ul class="navbar-profile-dropdown">
+            <li><a href="registration.html">Sign Up</a></li>
+            <li><a href="login.html">Log In</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Park Guide Profile Content -->
+  <div class="guide-profile-container">
+    <div class="guide-avatar-container">
+      <img src="styles/images/parkguide_example.png" alt="Park Guide Avatar" class="guide-avatar">
+    </div>
+    
+    <h2 class="guide-name">Timmy He</h2>
+    
+    <div class="guide-description-section">
+      <h3>Description:</h3>
+      <div class="guide-description" contenteditable="true">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam.
+      </div>
+      <div class="separator-line"></div>
+    </div>
+    
+    <!-- In the guide-actions div, update the back button -->
+    <div class="guide-actions">
+      <a href="index.html" class="back-button">Back</a>
+    </div>
+  </div>
+
+  <!-- Footer (static replacement of PHP include) -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <p>Phone Number: +601234567</p>
+        <p>Email Address: terraguide@gmail.com</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Address</h3>
+        <p>NBK Phase 2, The Northbank, GROUND FLOOR, Salak 22 (SL 22/4866, 93050 Kuching)</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <ul class="social-icons">
+          <li><a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+          <li><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+          <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>©2024 TerraGuide. All Rights Reserved</p>
+    </div>
+  </footer>
+</body>
+</html>
