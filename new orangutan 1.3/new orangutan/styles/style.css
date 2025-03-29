@@ -219,7 +219,7 @@
 
 
 .slideshow-container-2 {
-  width: 2000px;
+  width: 1900px;
   position: relative;
 }
 
@@ -230,14 +230,14 @@
 }
 
 .slide-image {
-  width: 1000px;
-  height: 250px;
+  width: 1500px;
+  height: 400px;
   object-fit: cover;
   border-radius: 12px 12px 0 0;
 }
 
 .green-box-s2 {
-  width: 1000px;
+  width: 1500px;
   height: 200px;
   background-color: #4E6E4E;
   border-radius: 0 0 12px 12px;
@@ -251,20 +251,24 @@
 .arrow-container {
   position: absolute;
   top: 50%;
-  width: 100%;
+  width: 1500px; /* Match the width of the slideshow */
   display: flex;
   justify-content: space-between;
   transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .arrow {
   cursor: pointer;
-  font-size: 24px;
+  font-size: 36px; /* Make arrows bigger */
   color: white;
-  padding: 1px;
+  padding: 12px;
   border-radius: 50%;
   user-select: none;
+  transition: background 0.3s ease;
 }
+
 /* end of slideshow 2 */
 
 
