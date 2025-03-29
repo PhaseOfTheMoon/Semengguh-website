@@ -87,21 +87,35 @@
 /*map next to slideshow 1 */
 
 .green-box-map-aeron {
-
-  width: 300px;
-  max-width: 200px;
-  height: 200px;
-  background-color: #4E6E4E;
-  border-radius: 12px;
-  padding: 20px;
-  color: white;
-  font-size: 1rem;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  width: 250px; /* 调整宽度以匹配第二张图 */
+  height: 250px; /* 调整高度 */
+  background-color: #4E6E4E; /* 绿色背景 */
+  border-radius: 12px; /* 圆角 */
+  padding: 15px; /* 调整内边距 */
+  color: white; /* 文字颜色 */
+  font-size: 1rem; /* 文字大小 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 轻微阴影 */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 水平居中 */
+  justify-content: space-between; /* 保持间距 */
+  text-align: center;
   position: absolute;
-  top: 200px;
-  right: 200px;
-
+  top: 180px; /* 调整位置 */
+  right: 150px; /* 调整位置 */
 }
+
+.green-box-map-aeron p {
+  font-weight: bold; /* 加粗标题 */
+  margin-bottom: 10px; /* 标题下方间距 */
+}
+
+#map {
+  width: 100%;
+  height: 85%;
+  border-radius: 10px; /* 地图圆角 */
+}
+
 
 /* end of map next to slideshow 1 */
 
