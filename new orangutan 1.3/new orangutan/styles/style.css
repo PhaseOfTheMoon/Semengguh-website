@@ -22,6 +22,8 @@
   gap: 20px;
   padding: 1rem 0;
   flex-direction: row;
+  
+
 }
 
 .slide-left {
@@ -82,6 +84,26 @@
 /*end of index slideshow 1 */
 
 
+/*map next to slideshow 1 */
+
+.green-box-map-aeron {
+
+  width: 300px;
+  max-width: 200px;
+  height: 200px;
+  background-color: #4E6E4E;
+  border-radius: 12px;
+  padding: 20px;
+  color: white;
+  font-size: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  position: absolute;
+  top: 200px;
+  right: 200px;
+
+}
+
+/* end of map next to slideshow 1 */
 
 
 
@@ -91,6 +113,65 @@
     display: none !important;
   }
 }
+
+/* css for blog 1 */
+
+/* blog 1 image */
+.smg1blogs {
+  padding: 100px;
+  position: relative;
+  min-height: 400px; /* Adjust as needed */
+  max-width: 890px; /* Adjust as needed */
+  margin: 0 auto; /* Center the boxes */
+  display: flex;
+}
+/*end of blog 1 iamge */
+
+
+/* blog h1 */
+
+.smg1blogsh1 {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* end of blog h1 */
+
+/* paragraph blog 1 */
+.smg1blogsp1{
+  text-align: left; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  text-indent: 50px;
+  padding: 30px;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+.smg1blogsp2{
+  text-align: left; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  text-indent: 50px;
+  padding: 20px;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.smg1blogsp3{
+  text-align: left; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  text-indent: 50px;
+  padding: 20px;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* end of blog 1 */
 
 /*===Introductory Page===*/
 
@@ -1252,8 +1333,10 @@ width: 5vw;
 
 
   .registration-svg-form-index {
-    width: 100%;
-    max-width: 800px;
+    width: 900px;
+    max-width: 1000px;
+    height: 400px;
+    max-height: 1000px;
     background-color: #4E6E4E;
     border-radius: 10px;
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
@@ -1262,6 +1345,9 @@ width: 5vw;
     flex-direction: column;
     padding: 20px;
     gap: 10px;
+    position: absolute;
+    top: 110px;
+    left: 100px;
   }
   
 .registration-svg {
