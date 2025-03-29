@@ -14,6 +14,11 @@
   position: relative;
 }
 
+.slideshow-container2a {
+  width: 100%;
+  position: relative;
+}
+
 .mySlides {
   display: none; /* hidden by default */
   flex-wrap: wrap;
@@ -22,11 +27,17 @@
   gap: 20px;
   padding: 1rem 0;
   flex-direction: row;
-  
 
 }
 
 .slide-left {
+  flex: 1;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+.slide-left2a {
   flex: 1;
   color: #fff;
   font-size: 1.2rem;
@@ -119,6 +130,142 @@
 
 /* end of map next to slideshow 1 */
 
+/*Daryl*/
+/* === Featured blogs Section === */
+
+.table-section {
+  width: 900px;
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+.table-title {
+  color: #000000;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+}
+
+.table-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 3px;
+  background-color: #000000;
+}
+
+.table-header {
+  display: flex;
+  justify-content: flex-end; /* Changed from space-between to flex-end since we removed the h2 */
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.table-header h2 {
+  color: #F6EFDC;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.view-all-btn {
+  background-color: transparent;
+  color: #F6EFDC;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.view-all-btn:hover {
+  color: #fbd97a;
+  font-weight: bold;
+}
+
+.table-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.table-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.see-all-btn2 {
+  background-color: transparent;
+  color: #4E6E4E;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 15px;
+  transition: all 0.3s ease;
+}
+
+.see-all-btn2:hover {
+  background-color: #4E6E4E;
+  color: #F6EFDC;
+}
+/* end of featured blogs */
+
+/* start of slideshow 2 */
+
+
+.slideshow-container-2 {
+  width: 2000px;
+  position: relative;
+}
+
+.mySlides2 {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slide-image {
+  width: 1000px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+.green-box-s2 {
+  width: 1000px;
+  height: 200px;
+  background-color: #4E6E4E;
+  border-radius: 0 0 12px 12px;
+  padding: 20px;
+  color: white;
+  font-size: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+.arrow-container {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.arrow {
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
+  padding: 1px;
+  border-radius: 50%;
+  user-select: none;
+}
+/* end of slideshow 2 */
 
 
 /*===screenshot blocker===*/
@@ -1364,6 +1511,24 @@ width: 5vw;
     left: 100px;
   }
   
+  .registration-svg-form-index2a {
+    width: 900px;
+    max-width: 1000px;
+    height: 400px;
+    max-height: 1000px;
+    background-color: #4E6E4E;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+    position: absolute;
+    top: 110px;
+    left: 100px;
+  }
+
 .registration-svg {
   padding: 2.3rem 2.2rem;
   position: relative;
@@ -1934,6 +2099,17 @@ align-items: center;
 justify-content: center;
 }
 
+.registration-height-container2a {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #E6ECD6;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
 /*===About US===*/
 
 .text-box-aboutus {
