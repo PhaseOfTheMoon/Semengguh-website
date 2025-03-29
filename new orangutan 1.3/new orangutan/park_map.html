@@ -190,11 +190,9 @@
 
     <div class="pdf-map-container">
       <div class="map-header">
-        <h3>
-          <span>View Tourist Map</span>
-          <a href="your-pdf-link.pdf" class="view-pdf">View in PDF</a>
-        </h3>
-      </div>
+        <h3 class="map-title">View Tourist Map</h3>
+        <a href="your-pdf-link.pdf" class="view-pdf">View in PDF</a>
+      </div>      
       <div class="map-box">
           <img src="your-map-image.jpg" alt="Tourist Map" class="map-image">
       </div>
@@ -255,7 +253,7 @@
 <script>
 // map domain
 function initMap() {
-var defaultLocation = { lat: 1.4637, lng: 110.3571 }; // Semenggoh address
+var defaultLocation = { lat: 1.4017, lng: 110.3145 }; // Semenggoh address
 var map = new google.maps.Map(document.getElementById("map"), {
     center: defaultLocation,
     zoom: 15,
