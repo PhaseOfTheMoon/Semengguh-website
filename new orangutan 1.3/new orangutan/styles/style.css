@@ -6925,19 +6925,13 @@ footer {
   color: #000000;
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   position: relative;
   display: inline-block;
 }
 
 .timetable-title::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  width: 100%;
-  height: 3px;
-  background-color: #000000;
+  display: none;
 }
 
 .timetable-header {
@@ -6978,6 +6972,17 @@ footer {
   align-items: center;
   width: 100%;
   margin-bottom: 30px;
+  position: relative;
+}
+
+.timetable-title-container::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 3px;
+  background-color: #000000;
 }
 
 .see-all-btn {
@@ -7103,18 +7108,10 @@ footer {
   align-items: center;
   width: 100%;
   margin-bottom: 30px;
-}
-
-.parkguide-title {
-  color: #000000;
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 30px;
   position: relative;
-  display: inline-block;
 }
 
-.parkguide-title::after {
+.parkguide-title-container::after {
   content: "";
   position: absolute;
   left: 0;
@@ -7122,6 +7119,19 @@ footer {
   width: 100%;
   height: 3px;
   background-color: #000000;
+}
+
+.parkguide-title {
+  color: #000000;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0px;
+  position: relative;
+  display: inline-block;
+}
+
+.parkguide-title::after {
+  display: none;
 }
 
 .parkguide-container {
