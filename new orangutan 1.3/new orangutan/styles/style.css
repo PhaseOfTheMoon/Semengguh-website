@@ -6668,9 +6668,9 @@ footer {
 .card {
   background-color: #4E6B50; 
   border-radius: 10px;
-  padding: 20px;
-  width: 250px;
-  height: 250px;
+  padding: 15px;
+  width: 300px;
+  height: 320px;
   text-align: center;
   display: flex;
   flex-direction: column;
