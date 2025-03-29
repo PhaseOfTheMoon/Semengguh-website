@@ -6646,6 +6646,49 @@ footer {
   border-bottom: 2px solid #999; 
 }
 
+.b-card {
+  background-color: #4E6B50;
+  border-radius: 10px;
+  padding: 15px;
+  width: 280px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+  color: white;
+  position: relative;
+}
+
+.b-image-container {
+  width: 100%;
+  height: 140px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.b-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.b-content{
+  padding: 10px;
+}
+
+.b-card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.b-card-description {
+  font-size: 0.9rem;
+  color: white;
+  margin-top: 8px;
+}
 
 /*Jun Zhen*/
 /* === Timetable Section === */
