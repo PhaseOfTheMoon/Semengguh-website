@@ -98,8 +98,8 @@
 /*map next to slideshow 1 */
 
 .green-box-map-aeron {
-  width: 350px; 
-  height: 350px; 
+  width: 420px; 
+  height: 400px; 
   background-color: #4E6E4E; 
   border-radius: 12px; 
   padding: 15px; 
@@ -112,7 +112,7 @@
   justify-content: space-between; 
   text-align: center;
   position: absolute;
-  top: 180px; 
+  top: 128px; 
   right: 150px; 
 }
 
