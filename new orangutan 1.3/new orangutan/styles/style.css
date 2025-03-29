@@ -92,6 +92,65 @@
   }
 }
 
+/* css for blog 1 */
+
+/* blog 1 image */
+.smg1blogs {
+  padding: 100px;
+  position: relative;
+  min-height: 400px; /* Adjust as needed */
+  max-width: 890px; /* Adjust as needed */
+  margin: 0 auto; /* Center the boxes */
+  display: flex;
+}
+/*end of blog 1 iamge */
+
+
+/* blog h1 */
+
+.smg1blogsh1 {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* end of blog h1 */
+
+/* paragraph blog 1 */
+.smg1blogsp1{
+  text-align: left; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  text-indent: 50px;
+  padding: 30px;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+.smg1blogsp2{
+  text-align: left; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  text-indent: 50px;
+  padding: 20px;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.smg1blogsp3{
+  text-align: left; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  text-indent: 50px;
+  padding: 20px;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* end of blog 1 */
+
 /*===Introductory Page===*/
 
 .homepage-container{
