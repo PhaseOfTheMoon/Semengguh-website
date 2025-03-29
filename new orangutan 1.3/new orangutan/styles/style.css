@@ -6711,6 +6711,77 @@ footer {
   font-size: 14px;
 }
 
+.pdf-map-container {
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.map-header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  border-bottom: 2px solid #3A4D39;
+  padding-bottom: 5px;
+  width: 100%;
+}
+
+.map-title {
+  font-size: 1.2rem;
+  color: #3A4D39;
+  margin: 0;
+}
+
+.view-pdf {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #3A4D39;
+  margin-left: auto; 
+}
+
+.map-box {
+  background-color: #4E6B50; 
+  border-radius: 10px;
+  width: 50%; 
+  max-width: 500px; 
+  height: 300px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto; 
+  border: 2px solid #22543D;
+}
+
+.map-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover; 
+}
+.back-container {
+  display: flex;
+  justify-content: flex-start; 
+  margin-top: 20px;
+  padding-left: 20px; 
+  margin-bottom: 2vw;
+}
+
+.back-button {
+  background-color: transparent;
+  border: 2px solid #3A4D39;
+  color: #3A4D39;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #3A4D39;
+  color: white;
+}
+
 /*==========================blogmenu=============================*/
 .b-container {
   max-width: 1000px; 
