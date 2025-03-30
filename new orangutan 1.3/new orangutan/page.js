@@ -102,3 +102,4 @@ window.onload = function () {
   showSlides(1);
   showSlides2(slideIndex2);
 };
+
