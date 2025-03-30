@@ -134,19 +134,19 @@
 /* === Featured blogs Section === */
 
 .table-section {
-  width: 900px;
-  max-width: 1200px;
-  margin: 80px auto;
+  width: 1250px;
+  max-width: 1500px;
+  margin: -369px auto 60px; /* Move it UP by reducing top margin */
   padding: 0 20px;
   position: relative;
-  margin-bottom: 80px;
+  z-index: 10; /* Ensures it stays above the slideshow */
 }
 
 .table-title {
   color: #000000;
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 0px; /* distance between h1 and line and image */
   position: relative;
   display: inline-block;
 }
@@ -156,7 +156,7 @@
   position: absolute;
   left: 0;
   bottom: -10px;
-  width: 100%;
+  width: 1400px;
   height: 3px;
   background-color: #000000;
 }
@@ -222,6 +222,7 @@
 .slideshow-container-2 {
   width: 1900px;
   position: relative;
+  z-index: 5; /* Lower than .table-section to keep it behind */
 }
 
 .mySlides2 {
@@ -231,14 +232,14 @@
 }
 
 .slide-image {
-  width: 1200px;
+  width: 1700px;
   height: 400px;
   object-fit: cover;
   border-radius: 12px 12px 0 0;
 }
 
 .green-box-s2 {
-  width: 1200px;
+  width: 1700px;
   height: 200px;
   background-color: #4E6E4E;
   border-radius: 0 0 12px 12px;
@@ -252,7 +253,7 @@
 .arrow-container {
   position: absolute;
   top: 50%;
-  width: 1200px; /* Match the width of the slideshow */
+  width: 1700px; /* Match the width of the slideshow */
   display: flex;
   justify-content: space-between;
   transform: translateY(-50%);
