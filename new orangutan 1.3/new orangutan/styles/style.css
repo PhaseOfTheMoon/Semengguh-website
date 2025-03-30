@@ -7518,3 +7518,40 @@ footer {
   border-color: #6D7E5E;
 }
 
+/* Profile page header specific styles */
+.profile-header-icons {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-left: auto;
+  padding-right: 80px;
+}
+
+.profile-icon-btn {
+  color: #F6EFDC;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s;
+  padding: 5px;
+}
+
+.profile-icon-btn:hover {
+  color: #fbd97a;
+}
+
+.profile-header-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.profile-header-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
