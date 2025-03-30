@@ -142,6 +142,8 @@
   z-index: 10; /* Ensures it stays above the slideshow */
 }
 
+
+/* move position of Featured Blogs */
 .table-title {
   color: #000000;
   font-size: 2rem;
@@ -149,17 +151,20 @@
   margin-bottom: 0px; /* distance between h1 and line and image */
   position: relative;
   display: inline-block;
+  right: 250px;
 }
-
+ 
+/* line postion width css */
 .table-title-container::after {
   content: "";
   position: absolute;
-  left: 0;
+  left: -240px;
   bottom: -10px;
-  width: 1400px;
+  width: 1730px;
   height: 3px;
   background-color: #000000;
 }
+
 .table-header {
   display: flex;
   justify-content: flex-end; /* Changed from space-between to flex-end since we removed the h2 */
@@ -205,6 +210,8 @@
   color: #4E6E4E;
   text-decoration: none;
   font-size: 1rem;
+  border: 1px solid #4E6E4E;
+  border-radius: 5px;
   padding: 8px 15px;
   transition: all 0.3s ease;
 }
@@ -220,9 +227,11 @@
 
 
 .slideshow-container-2 {
-  width: 1900px;
+  width: 1700px; /* Match the width of the slideshow */
+  max-width: 100%; /* Ensures it doesn't overflow on smaller screens */
   position: relative;
   z-index: 5; /* Lower than .table-section to keep it behind */
+  margin: 0 auto; /* Centers it on the page */
 }
 
 .mySlides2 {
