@@ -1,105 +1,68 @@
-// page.js
+// Slideshow 1
+var slideIndex1 = 1;
+showSlides1(slideIndex1);
 
-// Handle form submission
-document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('loginForm')?.addEventListener('submit', function(e) {
-      e.preventDefault(); // Prevent actual form submission
-  
-      const username = document.getElementById('username').value.trim();
-      const password = document.getElementById('password').value.trim();
-  
-      // Simple client-side validation
-      if (!username.match(/^[A-Za-z\s]+$/) || !password.match(/^[A-Za-z\s]+$/)) {
-        alert("Only alphabetical characters allowed in username and password.");
-        return;
-      }
-  
-      // Simulated login
-      alert("Login attempted for username: " + username + "\n(You can link this to an API or server in real use.)");
-  
-      // Optional redirect
-      // window.location.href = "homepage.html";
-    });
-  
-    // Screenshot blocking
-    document.addEventListener('keyup', (e) => {
-      if (e.key === 'PrintScreen') {
-        navigator.clipboard.writeText('');
-        document.body.style.filter = 'blur(10px)';
-        alert('Screenshots are disabled!');
-        setTimeout(() => {
-          document.body.style.filter = 'none';
-        }, 1500);
-      }
-    });
-  
-    // Print blocking (Ctrl+P)
-    document.addEventListener('keydown', (e) => {
-      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'p') {
-        e.preventDefault();
-        e.stopImmediatePropagation();
-        alert('Printing is disabled on this site.');
-      }
-    });
-  });
+function plusSlides1(n) {
+  showSlides1(slideIndex1 += n);
+}
 
-// slideshow 1 for index
+function currentSlide1(n) {
+  showSlides1(slideIndex1 = n);
+}
 
-let slideIndex = 1;
+function showSlides1(n) {
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  
+  if (n > slides.length) slideIndex1 = 1;
+  if (n < 1) slideIndex1 = slides.length;
 
-function showSlides(n) {
-  const slides = document.getElementsByClassName("mySlides");
-  const dots = document.getElementsByClassName("dot");
-
-  if (n > slides.length) slideIndex = 1;
-  if (n < 1) slideIndex = slides.length;
-
-  // Hide all slides
-  for (let i = 0; i < slides.length; i++) {
+  for (var i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-
-  // Remove active class from all dots
-  for (let i = 0; i < dots.length; i++) {
-    dots[i].classList.remove("active");
+  
+  for (var j = 0; j < dots.length; j++) {
+    dots[j].className = dots[j].className.replace(" active", "");
   }
 
-  // Show current slide
-  slides[slideIndex - 1].style.display = "flex";
-  dots[slideIndex - 1].classList.add("active");
+  slides[slideIndex1-1].style.display = "flex";
+  dots[slideIndex1-1].className += " active";
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-// Initial display
-window.onload = function () {
-  showSlides(slideIndex);
-};
-
-//slideshow 2
-
-let slideIndex2 = 1;
-
-function showSlides2(n) {
-  const slides = document.getElementsByClassName("mySlides2");
-  if (n > slides.length) slideIndex2 = 1;
-  if (n < 1) slideIndex2 = slides.length;
-
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-
-  slides[slideIndex2 - 1].style.display = "flex";
-}
+// Slideshow 2
+var slideIndex2 = 1;
+showSlides2(slideIndex2);
 
 function plusSlides2(n) {
   showSlides2(slideIndex2 += n);
 }
 
-window.onload = function () {
-  showSlides(1);
-  showSlides2(slideIndex2);
-};
+function showSlides2(n) {
+  var slides = document.getElementsByClassName("mySlides2");
+  
+  if (n > slides.length) slideIndex2 = 1;
+  if (n < 1) slideIndex2 = slides.length;
 
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slides[slideIndex2-1].style.display = "flex";
+}
+
+// Initialize everything when DOM is ready
+document.addEventListener('DOMContentLoaded', function() {
+  showSlides1(1);
+  showSlides2(1);
+  
+  // Auto-advance slideshows
+  setInterval(function() {
+    plusSlides1(1);
+  }, 5000);
+  
+  setInterval(function() {
+    plusSlides2(1);
+  }, 7000);
+  
+  // Other event listeners...
+});

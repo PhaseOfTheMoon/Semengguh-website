@@ -27,7 +27,6 @@
   gap: 20px;
   padding: 1rem 0;
   flex-direction: row;
-
 }
 
 .slide-left {
@@ -97,7 +96,6 @@
 
 /*map next to slideshow 1 */
 
-@media (max-width: 768px) {
 
 .green-box-map-aeron {
   width: 640px; 
@@ -114,14 +112,11 @@
   justify-content: space-between; 
   text-align: center;
   top: 108px; 
-  right: 150px; 
-   /*new and removed position */
-  flex: 1;
-  position: relative; /* Remove absolute */
-  margin-left: 0;
-  margin-top: 20px;
+  right: 150px;
+  position: absolute;
+
 }
-}
+
 
 .green-box-map-aeron p {
   font-weight: bold; 
