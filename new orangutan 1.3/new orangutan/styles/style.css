@@ -162,10 +162,12 @@
   position: absolute;
   left: -240px;
   bottom: -10px;
-
   width: 100%;
+  width: 1750px;
   height: 2px; 
   background-color: #999; 
+  position: relative;
+  display: inline-block;
   margin: 0 auto; 
 }
 
