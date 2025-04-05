@@ -141,7 +141,7 @@
         </i>
       </i>
     </nav>
-    <i classname="fa fa-caret-down">
+    <i classname="">
       <i classname="fa fa-caret-down">
         <i classname="fa-solid fa-bars">
           <i classname="fa-solid fa-user"></i>
